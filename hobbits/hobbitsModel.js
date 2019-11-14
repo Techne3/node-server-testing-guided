@@ -8,8 +8,8 @@ module.exports = {
   findById,
 };
 
-async function insert(hobbit) {
-  return null;
+ function insert(hobbit) {
+  return db('hobbits').insert(hobbit, 'id');
 }
 
 async function update(id, changes) {
